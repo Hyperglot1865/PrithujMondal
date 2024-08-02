@@ -9,6 +9,7 @@
 .artistimg{
     width: 25vw;
     height: 450px;
+    object-fit: cover;
 }
 .heading{
     font-family: "Merriweather", serif;

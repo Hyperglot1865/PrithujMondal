@@ -5,13 +5,13 @@
     align-items: center;
 }
 .left{
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 .right{
-    width: 40%;
+    width: 50%;
 }
 .name{
     font-family: "Merriweather", serif;

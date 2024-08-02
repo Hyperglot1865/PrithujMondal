@@ -13,6 +13,7 @@
 .card,.heroimg{
     width: 16vw;
     height: 220px;
+    object-fit: cover;
 }
 .card{
     position: relative;
