@@ -1,0 +1,55 @@
+.container{
+    margin-top: 150px;
+    padding: 0 15% 50px;
+}
+.timelinecontainer {
+    position: relative;
+    margin: 50px 0;
+    padding: 0 40px;
+  }
+  .heading{
+    font-family: "Merriweather", serif;
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .timelineline {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #333;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .timelineevent {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+  }
+  
+  .timelineevent:nth-child(odd) {
+    left: 0;
+  }
+  
+  .timelineevent:nth-child(even) {
+    left: 50%;
+  }
+  
+  .timelinebox {
+    border: 1px solid #888888;
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  .timelinebox h3 {
+    margin-top: 0;
+  }
+  
+  .timelinebox span {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.85em;
+    color: #777;
+  }
