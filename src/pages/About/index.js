@@ -16,7 +16,7 @@ export default function index() {
               <Image className={styles.heroimg} src={'/Hero/Heroimage.jpg'} width={1000} height={1000} alt='image'/>
             </div>
               <div className={styles.name}>Prithuj Mondal</div>
-                <div className={styles.text}>The capacity to perceive a shadow is a faculty that is closely attached to human development. Fearing the shadow, avoiding the shadow understanding how the shadow is created, identifying one's own shadow, playing with one's own shadow seems to accompany humankind. There is an unseen connection be- tween human beings and the collective identity of humankind. <br/><br/>
+                <div className={styles.text}>The capacity to perceive a shadow is a faculty that is closely attached to human development. Fearing the shadow, avoiding the shadow understanding how the shadow is created, identifying one&aposs own shadow, playing with one's own shadow seems to accompany humankind. There is an unseen connection be- tween human beings and the collective identity of humankind. <br/><br/>
                   
                    Today, global connections are manifest in the economy, in transportation and communication systems, and in responses to political, social and environmental crises. Some- time during this century a transition to global conflict, and thence to global coop- eration, took place. Along the way the conditions of life changed, driven by the changes, happened in social, environmental, political and economical structure, which themselves involved in global cooperation and collective actions. <br/><br/>
 

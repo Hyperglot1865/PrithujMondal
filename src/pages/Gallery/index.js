@@ -13,7 +13,7 @@ export default function index() {
         <div className={styles.container}>
         <div className={styles.heading}>Gallery</div>
         <div className={styles.flex}>
-                {artdata.map(data=><Link key={data.id} href={`/Artwork/${data.id}`}>
+                {artdata.map(data=><Link key={data.id} href={`/Artworks/${data.id}`}>
                 <div className={styles.card}>
                     <Image className={styles.heroimg} src={data.url} width={500} height={500} alt='image'/>
                     <div className={styles.info}>
