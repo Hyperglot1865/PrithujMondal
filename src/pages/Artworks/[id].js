@@ -6,7 +6,7 @@ import Navbar from '../../../Components/Home/Navbar';
 import Footer from '../../../Components/Home/Footer';
 import Image from 'next/image';
 
-export default function artwork() {
+export default function Artworks() {
     const router = useRouter();
     const { id } = router.query;
     let product = [];
