@@ -1,6 +1,6 @@
 import data from '../api/artworks';
 import { useRouter } from 'next/router';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '../../styles/About/artwork.module.css';
 import Navbar from '../../../Components/Home/Navbar';
 import Footer from '../../../Components/Home/Footer';
@@ -9,32 +9,52 @@ import Image from 'next/image';
 export default function Art() {
     const router = useRouter();
     const { id } = router.query;
-    let product = [];
+    const [product, setProduct] = useState(null);
 
-    data.map((data) => {
-        if(data.id == id){
-          product.push(data);
+    useEffect(() => {
+        if (id) {
+            const foundProduct = data.find((item) => item.id == id);
+            if (foundProduct) {
+                setProduct(foundProduct);
+            }
         }
-      })
+    }, [id]);
 
-  return (
-    <>
-    <Navbar/>
-    <div className={styles.container}>
-        <div>
-            {product.url ? <div>Loading</div> : <Image className={styles.img} src={product[0].url} width={500} height={500} alt='image'/>}
-        </div>
-        
-        <div className={styles.right}>
-        <div className={styles.heading}>Artworks</div>
-            <div className={styles.text}><b>Title: </b>{product[0].name}</div>
-            <div className={styles.text}><b>Size: </b>{product[0].size}</div>
-            <div className={styles.text}><b>Medium: </b>{product[0].medium}</div>
-            <div className={styles.text}><b>Year: </b>{product[0].year}</div>
-        </div>
-    </div>
+    if (!product) {
+        return (
+            <>
+                <Navbar />
+                <div className={styles.container}>
+                    <div className={styles.heading}>Loading...</div>
+                </div>
+                <Footer />
+            </>
+        );
+    }
 
-    <Footer/>
-    </>
-  )
+    return (
+        <>
+            <Navbar />
+            <div className={styles.container}>
+                <div>
+                    <Image 
+                        className={styles.img} 
+                        src={product.url} 
+                        width={500} 
+                        height={500} 
+                        alt={product.name} 
+                    />
+                </div>
+                
+                <div className={styles.right}>
+                    <div className={styles.heading}>Artworks</div>
+                    <div className={styles.text}><b>Title: </b>{product.name}</div>
+                    <div className={styles.text}><b>Size: </b>{product.size}</div>
+                    <div className={styles.text}><b>Medium: </b>{product.medium}</div>
+                    <div className={styles.text}><b>Year: </b>{product.year}</div>
+                </div>
+            </div>
+            <Footer />
+        </>
+    );
 }
