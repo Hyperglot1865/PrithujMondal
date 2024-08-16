@@ -10,11 +10,10 @@ export default function index() {
   return (
     <div>
         <Navbar />
-
         <div className={styles.container}>
         <div className={styles.heading}>Gallery</div>
         <div className={styles.flex}>
-                {artdata.slice(0,4).map(data=><Link href={`/artwork/${data.id}`}>
+                {artdata.map(data=><Link href={`/artwork/${data.id}`}>
                 <div className={styles.card}>
                     <Image className={styles.heroimg} src={data.url} width={500} height={500} alt='image'/>
                     <div className={styles.info}>
