@@ -22,7 +22,7 @@ export default function Art() {
     <Navbar/>
     <div className={styles.container}>
         <div>
-            <Image className={styles.img} src={product[0].url} width={500} height={500} alt='image'/>
+            {product.url ? <div>Loading</div> : <Image className={styles.img} src={product[0].url} width={500} height={500} alt='image'/>}
         </div>
         
         <div className={styles.right}>
