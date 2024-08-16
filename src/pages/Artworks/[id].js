@@ -1,12 +1,12 @@
+import data from '../api/artworks';
 import { useRouter } from 'next/router';
-import data from '../api/artworks'
-import React from 'react'
-import styles from '../../styles/About/artwork.module.css'
+import React from 'react';
+import styles from '../../styles/About/artwork.module.css';
 import Navbar from '../../../Components/Home/Navbar';
 import Footer from '../../../Components/Home/Footer';
 import Image from 'next/image';
 
-export default function Artworks() {
+export default function Art() {
     const router = useRouter();
     const { id } = router.query;
     let product = [];
