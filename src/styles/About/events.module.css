@@ -53,3 +53,24 @@
 .desc{
     margin: 10px 0 20px;
 }
+@media screen and (max-width: 1100px){
+    .container{
+        padding: 0 5% 50px;
+    }
+    .flex{
+        grid-template-columns: 1fr 1fr;
+    }
+    .card,.heroimg,.info{
+        width: 100%;
+    }
+    .info{
+        width: 90%;
+        padding: 0 5%;
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 600px){
+    .flex{
+        grid-template-columns: 1fr;
+    }
+}

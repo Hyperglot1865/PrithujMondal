@@ -29,3 +29,16 @@
     color: black;
     text-decoration: none;
 }
+@media screen and (max-width: 1100px){
+    .container{
+        padding: 0 5% 50px;
+    }
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 600px){
+    .cards{
+        grid-template-columns: 1fr;
+    }
+}

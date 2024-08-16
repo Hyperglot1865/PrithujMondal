@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from '../../../Components/Home/Navbar'
 import Footer from '../../../Components/Home/Footer'
 import styles from '../../styles/About/blog.module.css'
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function index() {
