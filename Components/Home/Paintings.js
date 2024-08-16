@@ -10,7 +10,7 @@ export default function Paintings() {
         <div className={styles.heading}>Paintings</div>
         <div className={styles.flex}>
 
-            {artdata.slice(0,4).map(data=><Link href={`/artwork/${data.id}`}>
+            {artdata.slice(0,4).map(data=><Link href={`/Artwork/${data.id}`}>
             <div className={styles.card}>
                 <Image className={styles.heroimg} src={data.url} width={500} height={500} alt='image'/>
                 <div className={styles.info}>
