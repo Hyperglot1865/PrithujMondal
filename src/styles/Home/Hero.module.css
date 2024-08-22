@@ -59,4 +59,7 @@
     .tagcont{
         padding-left: 0;
     }
+    .heroimg{
+        object-position: -40vw 0%;
+    }
 }
