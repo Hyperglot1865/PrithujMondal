@@ -22,7 +22,7 @@ export default function Home() {
         <Story />
         <Paintings />
         <Sculpture />
-        <Events />
+        {/* <Events /> */}
         <Footer/>
       </main>
     </>

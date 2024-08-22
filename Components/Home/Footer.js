@@ -13,8 +13,8 @@ export default function Footer() {
         <div className={styles.flex}>
             <div className={styles.left}>
                 <IoIosMail className={styles.icon}/>
-                <div className={styles.name}>Artist Name</div>
-                <div className={styles.mail}>artist@gmail.com</div>
+                <div className={styles.name}>Prithuj Mondal</div>
+                <div className={styles.mail}>mondal.prithuj@gmail.com</div>
             </div>
             <div className={styles.right}>
                 <div className={styles.righth}>Follow On</div>

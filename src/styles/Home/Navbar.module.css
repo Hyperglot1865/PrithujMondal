@@ -8,16 +8,18 @@
     position: fixed;
     top: 0;
     width: 70%;
-    background-color: white;
+    gap: 40%;
+    background-color: var(--main-bg-color);
     z-index: 10;
     border-bottom: 1px solid black;
+    color: white;
 }
 .menu{
     display: none;
 }
 .link{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .logo{
     display: flex;
@@ -25,12 +27,13 @@
     align-items: center;
 }
 .initials{
-    font-family: "Merriweather", serif;
+    font-family: "Playfair Display", serif;
     font-size: 3.5rem;
 }
 .name{
     font-size: 0.8rem;
     letter-spacing: -1px;
+width: max-content;
 }
 .list{
     width: 65%;
@@ -60,6 +63,7 @@
         width: 100vw;
         background-color: white;
         transition: 0.3s;
+        background-color: var(--main-bg-color);
     }
     .olist{
         position: absolute;

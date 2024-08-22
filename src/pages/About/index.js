@@ -13,7 +13,7 @@ export default function index() {
         <Navbar />
             <div className={styles.container}>
             <div>
-              <Image className={styles.heroimg} src={'/Hero/Heroimage.jpg'} width={1000} height={1000} alt='image'/>
+              <Image className={styles.heroimg} src={'/heroimage/1 (1).png'} width={1000} height={1000} alt='image'/>
             </div>
               <div className={styles.name}>Prithuj Mondal</div>
                 <div className={styles.text}>The capacity to perceive a shadow is a faculty that is closely attached to human development. Fearing the shadow, avoiding the shadow understanding how the shadow is created, identifying one&aposs own shadow, playing with one&aposs own shadow seems to accompany humankind. There is an unseen connection be- tween human beings and the collective identity of humankind. <br/><br/>

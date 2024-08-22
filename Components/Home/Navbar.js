@@ -13,9 +13,9 @@ export default function Navbar() {
                 <Link className={styles.link} href={'/Exhibitions'}>Exhibitions</Link>
                 {/* <li>Virtual Gallery</li> */}
                 <Link className={styles.link} href={'/Gallery'}>Gallery</Link>  
-                <Link className={styles.link} href={'/News&Events'}>News and Event</Link>               
+                {/* <Link className={styles.link} href={'/News&Events'}>News and Event</Link>                */}
                 <Link className={styles.link} href={'/About'}>About</Link>
-                <Link className={styles.link} href={'/Blog'}>Blog</Link>
+                {/* <Link className={styles.link} href={'/Blog'}>Blog</Link> */}
             </ul>
             <div onClick={()=>setOpen(!open)} className={styles.menu}>
               <Menu />
